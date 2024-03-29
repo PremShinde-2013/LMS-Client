@@ -14,7 +14,7 @@ const CoursePlayer: FC<Props> = ({ videoUrl, title }) => {
 
 	useEffect(() => {
 		axios
-			.post("https://lms-server-fkmg.vercel.app/api/v1/getVdoCipherOTP", {
+			.post("https://lms-server-exz5.onrender.com/api/v1/getVdoCipherOTP", {
 				videoId: videoUrl,
 			})
 			.then((res) => {
