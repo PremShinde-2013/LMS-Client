@@ -78,15 +78,15 @@ const Footer = ({}: FooterProps) => {
 						<ul className='space-y-4'>
 							<li>
 								<Link
-									href='https://www.youtube.com/channel/UCnvTFts2w7LStc5vW7KMKZw'
+									href='https://www.linkedin.com/in/prem-shinde-diet/'
 									className='text-base text-black dark:text-gray-300 dark:hover:text-white'
 								>
-									Youtube
+									Linkedin
 								</Link>
 							</li>
 							<li>
 								<Link
-									href='https://www.instagram.com/kouroshrstn/'
+									href='https://www.instagram.com/premshinde__/'
 									className='text-base text-black dark:text-gray-300 dark:hover:text-white'
 								>
 									Instagram
@@ -94,7 +94,7 @@ const Footer = ({}: FooterProps) => {
 							</li>
 							<li>
 								<Link
-									href='https://github.com/alirezarastineh'
+									href='https://github.com/PremShinde-2013'
 									className='text-base text-black dark:text-gray-300 dark:hover:text-white'
 								>
 									github
