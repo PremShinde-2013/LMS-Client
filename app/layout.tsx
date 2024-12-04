@@ -57,7 +57,7 @@ export default function RootLayout({
 						<div className='relative flex flex-col h-screen'>
 							<Nav />
 
-							<main className='container mx-auto max-w-7xl pt-16 px-6 flex-grow text-center justify-center   '>
+							<main className='container mx-auto max-w-7xl pt-16 px-6 flex-grow    '>
 								<Custom>{children}</Custom>
 							</main>
 						</div>
