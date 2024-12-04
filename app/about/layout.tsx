@@ -8,7 +8,7 @@ export default function AboutLayout({
 }) {
 	return (
 		<section className='flex flex-col items-center justify-center gap-4 py-8 md:py-10 lg:mt-60 '>
-			<div className='  text-center justify-center  w-screen   lg:mt-60 mt-[1200px]'>
+			<div className='  text-center justify-center  w-screen   lg:mt-60 mt-[1600px]'>
 				{children}
 			</div>
 		</section>

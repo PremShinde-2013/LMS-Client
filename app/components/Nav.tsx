@@ -173,7 +173,7 @@ const Nav = (props: Props) => {
                         <NavbarContent className="sm:hidden" justify="start">
                             <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
                         </NavbarContent>
-                        <NavbarContent className="sm:hidden  flex mr-32 " justify="center">
+                        <NavbarContent className="sm:hidden  flex  " justify="center">
                             <NavbarBrand>
                                 <NextLink
                                     className='flex justify-start items-center gap-1 cursor-pointer'
@@ -260,6 +260,54 @@ const Nav = (props: Props) => {
                             <ThemeSwitch toggleTheme={toggleTheme} />
 
                             <NavbarItem className='hidden lg:flex'>{searchInput}</NavbarItem>
+
+                            <NavbarItem className=' md:flex'>
+                                {/* Avatar with click event to toggle sign-in modal */}
+                                {user ? (
+                                    <>
+                                        <Link href='/profile'>
+                                            <Avatar
+                                                className=' lg:flex cursor-pointer'
+                                                isBordered
+                                                // height={40}
+                                                radius='full'
+                                                src={
+                                                    user.avatar
+                                                        ? user.avatar.url
+                                                        : "https://img.freepik.com/free-photo/view-3d-man-holding-laptop_23-2150709818.jpg?t=st=1709596014~exp=1709599614~hmac=123a2af7e09c6c82b82801146d728478720e61efbadc943eafac84625951ac51&w=740"
+                                                }
+                                            />
+                                        </Link>
+                                    </>
+                                ) : (
+                                    <Avatar
+                                        className=' lg:flex cursor-pointer'
+                                        isBordered
+                                        radius='full'
+                                        src='https://i.pravatar.cc/150?u=a04258114e29026708c'
+                                        onClick={handleAvatarClick}
+                                    />
+                                )}
+                            </NavbarItem>
+                        </NavbarContent>
+                        {/* Navbar content */}
+                        <NavbarContent
+                            className='sm:hidden  flex'
+
+                        >
+                            {/* Other items */}
+                            <NavbarItem className='sm:hidden  '>
+
+                                <Link
+                                    isExternal
+                                    href={siteConfig.links.github}
+                                    aria-label='Github'
+                                >
+                                    <GithubIcon className='text-default-500' />
+                                </Link>
+                            </NavbarItem>
+                            <ThemeSwitch toggleTheme={toggleTheme} />
+
 
                             <NavbarItem className=' md:flex'>
                                 {/* Avatar with click event to toggle sign-in modal */}

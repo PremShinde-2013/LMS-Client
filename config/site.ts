@@ -25,8 +25,8 @@ interface SiteConfigType {
 const navigationItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Courses", href: "/courses" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Blog", href: "/blog" },
+ 
+  
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
 ];
