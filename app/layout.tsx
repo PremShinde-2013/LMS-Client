@@ -18,6 +18,7 @@ import { useLoadUserQuery } from "@/redux/features/api/apiSlice";
 import Loader from "./components/Loader/Loader";
 import { useEffect } from "react";
 import Nav from "./components/Nav";
+import Startloader from "./components/Loader/Start-loader";
 
 const ENDPOINT = process.env.NEXT_PUBLIC_SOCKET_SERVER_URI || "";
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
@@ -80,5 +81,5 @@ const Custom = ({ children }: CustomProps) => {
 		socketId.on("connection", () => { });
 	}, []);
 
-	return <div>{isLoading ? <Loader /> : <div>{children}</div>}</div>;
+	return <div>{isLoading ? <Startloader /> : <div>{children}</div>}</div>;
 };

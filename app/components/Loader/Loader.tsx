@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Spinner } from "@nextui-org/react";
+import { TypingAnimation } from "../ui/typing-animation";
 
 type Props = {};
 
