@@ -1,6 +1,5 @@
 import { Spinner } from '@nextui-org/react';
 import React from 'react';
-import { TypingAnimation } from '../ui/typing-animation';
 import { NeonGradientCard } from '../ui/neonCard';
 
 type Props = {};
